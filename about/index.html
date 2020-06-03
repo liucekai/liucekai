@@ -399,6 +399,13 @@ height:50vh;
         
     
         
+            
+                <span class="iconfont-archer qq" title=qq>
+                  
+                  <img class="profile-qr" src="/960213854" />
+                </span>
+            
+        
     
         
     
@@ -521,17 +528,17 @@ height:50vh;
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">06/02</span><a class="archive-post-title" href= "/2020/06/02/hello-world/" >园区网</a>
-        </li>
-    
-    
-        <li class="archive-post-item">
             <span class="archive-post-date">06/02</span><a class="archive-post-title" href= "/2020/06/02/redhat--linux/" >rehat</a>
         </li>
     
     
         <li class="archive-post-item">
             <span class="archive-post-date">06/02</span><a class="archive-post-title" href= "/2020/06/02/test-my-site/" >我的第一个博客</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">06/02</span><a class="archive-post-title" href= "/2020/06/02/hello-world/" >园区网</a>
         </li>
     
     </div>
@@ -578,7 +585,7 @@ jsonContent:
 </div>
 		</div> 
 	<div id="music163player">
-    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1438776484&auto=1&height=66"></iframe>
+    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 auto=1 src="//music.163.com/outchain/player?type=2&id=1438776484&auto=1&height=66?rel=0&amp;autoplay=1"></iframe>
 
 </div>
     </div>
@@ -615,7 +622,23 @@ jsonContent:
     <!-- async load share.js -->
      
 	<!-- 爱心  -->
-	<script type="text/javascript" src="/scripts/love.js"></script>
+	<script type="text/javascript" src="\scripts\love.js"></script>
+	<!-- 线条  -->
+
+<script type="text/javascript" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
+
+<!-- 爆炸 -->
+<canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas> 
+<script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script> 
+<script type="text/javascript" src="/scripts/firework.js"></script>
+
+
+<!-- 雪花特效 -->
+<script type="text/javascript" src="\scripts\snow.js"></script>
+
+
+<!--版权声明：本文为CSDN博主「TRHX • 鲍勃」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。-->
+<!--原文链接：https://itrhx.blog.csdn.net/article/details/85420403 -->
     <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
 </html>
 
