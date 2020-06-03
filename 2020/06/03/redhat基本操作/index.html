@@ -678,6 +678,10 @@ top:50vh;
         </div>
         <!-- search  -->
         
+            <div class="site-search popup-trigger">
+                <span class="iconfont-archer search-icon">&#xe627;</span>
+            </div>
+        
     </div>
     
     <div class="post-archive">
@@ -757,7 +761,7 @@ jsonContent:
 </div>
 		</div> 
 	<div id="music163player">
-    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 auto=1 src="//music.163.com/outchain/player?type=2&id=1438776484&auto=1&height=66?rel=0&amp;autoplay=1"></iframe>
+    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1433324655&auto=1&height=66"></iframe>
 
 </div>
     </div>
@@ -784,6 +788,29 @@ jsonContent:
     <script src="/scripts/main.js"></script>
     <!-- algolia -->
     
+        <div class="site-search">
+  <div class="algolia-popup popup">
+    <div class="algolia-search">
+      <div class="algolia-search-input-icon">
+        <i class="fa fa-search"></i>
+      </div>
+      <div class="algolia-search-input" id="algolia-search-input"></div>
+    </div>
+
+    <div class="algolia-results">
+      <div id="algolia-stats"></div>
+      <div id="algolia-hits"></div>
+      <div id="algolia-pagination" class="algolia-pagination"></div>
+    </div>
+
+    <span class="popup-btn-close">
+      <i class="iconfont-archer">&#xe609;</i>
+    </span>
+  </div>
+</div>
+        <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.8.0/dist/instantsearch.min.js" defer></script>
+        <script src="/scripts/search.js" defer></script>
+    
     <!-- busuanzi  -->
     
     <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
@@ -796,7 +823,7 @@ jsonContent:
         <script src="/scripts/share.js" async></script>    
      
 	<!-- 爱心  -->
-	<script type="text/javascript" src="\scripts\love.js"></script>
+	<script type="text/javascript" src="/scripts/love.js"></script>
 	<!-- 线条  -->
 
 <script type="text/javascript" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
@@ -810,6 +837,8 @@ jsonContent:
 <!-- 雪花特效 -->
 <script type="text/javascript" src="\scripts\snow.js"></script>
 
+  <!--pjax：防止跳转页面音乐暂停-->
+  <script src="https://cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.js"></script> 
 
 <!--版权声明：本文为CSDN博主「TRHX • 鲍勃」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。-->
 <!--原文链接：https://itrhx.blog.csdn.net/article/details/85420403 -->
