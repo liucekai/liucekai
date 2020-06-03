@@ -20,19 +20,35 @@
     <meta name="keywords" content="hexo,hexo-theme,hexo-blog">
     
     <meta name="description" content="">
-    <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/archives/2020/index.html">
+    <meta name="description" content="redhat基本操作Init 3 进入非图形化界面 Startx 进入图形化界面 Init 5 进入图形化界面 Vim &#x2F;etc&#x2F;inittab编辑开机默认界面： Id:5:initdefault 改成 Id:3:initdefault :Wq!保存，Reboot重启，随后开机就是非图形化界面了   root表示管理员（最高级用户），moni是主机名,desktop是当前所在位置，#代表最高权限，">
+<meta property="og:type" content="article">
+<meta property="og:title" content="redhat基本操作">
+<meta property="og:url" content="http://yoursite.com/2020/06/03/redhat%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="redhat基本操作Init 3 进入非图形化界面 Startx 进入图形化界面 Init 5 进入图形化界面 Vim &#x2F;etc&#x2F;inittab编辑开机默认界面： Id:5:initdefault 改成 Id:3:initdefault :Wq!保存，Reboot重启，随后开机就是非图形化界面了   root表示管理员（最高级用户），moni是主机名,desktop是当前所在位置，#代表最高权限，">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://liucekai.github.io/images/r1-1.png">
+<meta property="og:image" content="https://liucekai.github.io/images/r1-2.png">
+<meta property="og:image" content="https://liucekai.github.io/images/r1-3.png">
+<meta property="og:image" content="https://liucekai.github.io/images/r1-4.png">
+<meta property="og:image" content="https://liucekai.github.io/images/r1-5.png">
+<meta property="og:image" content="https://liucekai.github.io/images/r1-6.png">
+<meta property="og:image" content="https://liucekai.github.io/images/r1-7.png">
+<meta property="og:image" content="https://liucekai.github.io/images/r1-8.png">
+<meta property="og:image" content="https://liucekai.github.io/images/r1-9.png">
+<meta property="og:image" content="https://liucekai.github.io/images/r1-10.png">
+<meta property="og:image" content="https://liucekai.github.io/images/r1-11.png">
+<meta property="article:published_time" content="2020-06-03T06:59:24.874Z">
+<meta property="article:modified_time" content="2020-06-03T12:09:26.161Z">
 <meta property="article:author" content="CeKai">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://liucekai.github.io/images/r1-1.png">
     <meta http-equiv="Cache-control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
     
     <link rel="alternate" href="/atom.xml" title="The road to network engineering." type="application/atom+xml">
     
-    <title>cekai-network manager</title>
+    <title>redhat基本操作 · cekai-network manager</title>
     <style type="text/css">
     @font-face {
         font-family: 'Oswald-Regular';
@@ -214,12 +230,23 @@
 
 	
     
+        <body class="post-body">
+    
     
 <header class="header">
 
     <div class="read-progress"></div>
     <div class="header-sidebar-menu">&#xe775;</div>
     <!-- post页的toggle banner  -->
+    
+    <div class="banner">
+            <div class="blog-title">
+                <a href="/" >The road to network engineering.</a>
+            </div>
+            <div class="post-title">
+                <a href="#" class="post-name">redhat基本操作</a>
+            </div>
+    </div>
     
     <a class="home-link" href=/>The road to network engineering.</a>
 </header>
@@ -231,24 +258,68 @@
 
 
 
+
+height:50vh;
 ">
     
     <!-- 主页  -->
+    
+    
+    <!-- 404页  -->
             
     <div class="site-intro-placeholder"></div>
-    <div class="site-intro-img" style="background-image: url(/)"></div>
+    <div class="site-intro-img" style="background-image: url(/intro/post-bg.jpg)"></div>
     <div class="site-intro-meta">
         <!-- 标题  -->
         <h1 class="intro-title">
             <!-- 主页  -->
+            
+            redhat基本操作
+            <!-- 404 -->
             
         </h1>
         <!-- 副标题 -->
         <p class="intro-subtitle">
             <!-- 主页副标题  -->
             
+            
+            <!-- 404 -->
+            
         </p>
         <!-- 文章页meta -->
+        
+            <div class="post-intros">
+                <!-- 文章页标签  -->
+                
+                
+                    <div class="post-intro-read">
+                        <span>Word count: <span class="post-count word-count">323</span>Reading time: <span class="post-count reading-time">1 min</span></span>
+                    </div>
+                
+                <div class="post-intro-meta">
+                    <span class="post-intro-calander iconfont-archer">&#xe676;</span>
+                    <span class="post-intro-time">2020/06/03</span>
+                    
+                    <span id="busuanzi_container_page_pv" class="busuanzi-pv">
+                        <span class="iconfont-archer">&#xe602;</span>
+                        <span id="busuanzi_value_page_pv"></span>
+                    </span>
+                    
+                    <span class="shareWrapper">
+                        <span class="iconfont-archer shareIcon">&#xe71d;</span>
+                        <span class="shareText">Share</span>
+                        <ul class="shareList">
+                            <li class="iconfont-archer share-qr" data-type="qr">&#xe75b;
+                                <div class="share-qrcode"></div>
+                            </li>
+                            <li class="iconfont-archer" data-type="weibo">&#xe619;</li>
+                            <li class="iconfont-archer" data-type="qzone">&#xe62e;</li>
+                            <li class="iconfont-archer" data-type="twitter">&#xe634;</li>
+                            <li class="iconfont-archer" data-type="facebook">&#xe67a;</li>
+                        </ul>
+                    </span>
+                </div>
+            </div>
         
     </div>
 </div>
@@ -349,157 +420,87 @@
 </script>        
         <img class="loading" src="/assets/loading.svg" style="display: block; margin: 6rem auto 0 auto; width: 6rem; height: 6rem;" />
         <div class="container container-unloaded">
-            <main class="main index-page">
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2020/06/03/redhat%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/" >
-            
-                <span>redhat基本操作</span>
-        </a>
-        <div class="abstract-content">
-            redhat基本操作Init 3 进入非图形化界面
-Startx 进入图形化界面
-Init 5 进入图形化界面
-Vim /etc/inittab编辑开机默认界面：
-Id:5:initdefault 改成 Id:3:initdefault
-:Wq!保存，Reboot重启，随后开机就是非图形化界面了
+            <main class="main post-page">
+    <article class="article-entry">
+        <h2 id="redhat基本操作"><a href="#redhat基本操作" class="headerlink" title="redhat基本操作"></a>redhat基本操作</h2><p>Init 3 进入非图形化界面</p>
+<p>Startx 进入图形化界面</p>
+<p>Init 5 进入图形化界面</p>
+<p>Vim /etc/inittab编辑开机默认界面：</p>
+<p>Id:5:initdefault 改成 Id:3:initdefault</p>
+<p>:Wq!保存，Reboot重启，随后开机就是非图形化界面了</p>
+<p><img src="https://liucekai.github.io/images/r1-1.png" alt=""></p>
+<p> root表示管理员（最高级用户），moni是主机名,desktop是当前所在位置，#代表最高权限，如果是普通用户则为$</p>
+<p>Pwd显示当前目录</p>
+<p>最前面的/表示根目录</p>
+<p>Cd 进入某目录（必须是完整的路径，即绝对路径）</p>
+<p><img src="https://liucekai.github.io/images/r1-2.png" alt=""></p>
+<p>除非在对应的路径下配合.一起用，相对路径（而且./可以省略）</p>
+<p><img src="https://liucekai.github.io/images/r1-3.png" alt=""></p>
+<p>Cd ..返回上一级目录，..表示上一级，.表示当前</p>
+<p>Cd -表示回到上一次待的位置</p>
+<p><img src="https://liucekai.github.io/images/r1-4.png" alt=""></p>
+<p>Cp复制，mv移动/剪切（Mv还有重命名的功能）</p>
+<p><img src="https://liucekai.github.io/images/r1-5.png" alt=""></p>
+<p><img src="https://liucekai.github.io/images/r1-6.png" alt=""></p>
+<p>Rm删除文件  rm -fr强制删除文件和文件夹</p>
+<p><img src="https://liucekai.github.io/images/r1-7.png" alt=""></p>
+<p>*表示所有</p>
+<p><img src="https://liucekai.github.io/images/r1-8.png" alt=""></p>
+<p>Shutdown -h 20二十分钟后关机</p>
+<p>Shutdown -c取消关机</p>
+<p><img src="https://liucekai.github.io/images/r1-9.png" alt=""></p>
+<p>~表示root目录，即家目录</p>
+<p>Ls 显示当前目录的内容</p>
+<p>Init 5：切换为图形化界面</p>
+<p><img src="https://liucekai.github.io/images/r1-10.png" alt=""></p>
+<p>不记得要进入的文件夹时按下tab键会显示当下有哪些文件夹</p>
+<p>Mkdir在当前位置新建文件夹</p>
+<p><img src="https://liucekai.github.io/images/r1-11.png" alt=""></p>
+<p>Touch 1  创建文件1</p>
 
- root表示管理员（最高级用户），moni是主机名,desktop是当前所在位置，#代表最高权限，如果是普通用户则为$
-Pwd显示当前目录
-最前面的/表示根目录
-Cd 进入某目录（必须是完整的路径，即绝对路径）
-
-除非在对应的路径下配合.一起用，相对路径（而且./可以省略）
-
-Cd ..返回...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2020/06/03</span>
-            </div>
-            <!-- tags  -->
-            
-        </div>
     </article>
+    <!-- license  -->
     
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2020/06/02/1000%E4%BA%BA%E5%86%97%E4%BD%99%E5%9E%8B%E4%BC%81%E4%B8%9A%E7%BD%91/" >
-            
-                <span>1000人冗余型企业网</span>
-        </a>
-        <div class="abstract-content">
-            需求分析
-确保分支可以访问总部
-企业内网划分多个vlan
-出口配置NAT
-禁止vlan5访问外网
-所有设备，在任何位置都能telnet远程管理
-设置合理的stp优先级、边缘端口、使用stp优化技术加快stp收敛、并减少stp震荡
-所有用户均为自动获取ip地址，并配置相关dhcp安全技术
-一定程度上实现负载均衡\分担、链路冗余
-在企业出口将内网服务器的端口映射到电信公网，允许外网用户访问
-
-设计原则
-减少广播域大小，提高网络稳定性
-减少设备收敛时间、将stp优化
-提高内网设备安全性
-acl合理控制
-设备尽量实现负载均衡\分担、链路冗余详细方案
-
-详细方案步骤一：底层eth-trunk 、v...
+        <div class="license-wrapper">
+            <p>Author：<a href="http://yoursite.com">CeKai</a>
+            <p>原文链接：<a href="http://yoursite.com/2020/06/03/redhat%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/">http://yoursite.com/2020/06/03/redhat%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/</a>
+            <p>发表日期：<a href="http://yoursite.com/2020/06/03/redhat%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/">June 3rd 2020, 2:59:24 pm</a>
+            <p>更新日期：<a href="http://yoursite.com/2020/06/03/redhat%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/">June 3rd 2020, 8:09:26 pm</a>
+            <p>版权声明：本文采用<a rel="license noopener" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可</p>
         </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2020/06/02</span>
-            </div>
-            <!-- tags  -->
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2020/06/02/redhat--linux/" >
-            
-                <span>rehat</span>
-        </a>
-        <div class="abstract-content">
-            
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2020/06/02</span>
-            </div>
-            <!-- tags  -->
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2020/06/02/test-my-site/" >
-            
-                <span>我的第一个博客</span>
-        </a>
-        <div class="abstract-content">
-            
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2020/06/02</span>
-            </div>
-            <!-- tags  -->
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2020/06/02/hello-world/" >
-            
-                <span>园区网</span>
-        </a>
-        <div class="abstract-content">
-            
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2020/06/02</span>
-            </div>
-            <!-- tags  -->
-            
-        </div>
-    </article>
     
     <!-- paginator  -->
+    <ul class="post-paginator">
+        <li class="next">
+            
+        </li>
+        <li class="previous">
+            
+                <div class="prevSlogan">Previous Post</div>
+                <a href= "/2020/06/02/1000%E4%BA%BA%E5%86%97%E4%BD%99%E5%9E%8B%E4%BC%81%E4%B8%9A%E7%BD%91/" title= "1000人冗余型企业网">
+                    <div class="prevTitle">1000人冗余型企业网</div>
+                </a>
+            
+        </li>
+    </ul>
+    <!-- 评论插件 -->
+    <!-- 来必力City版安装代码 -->
+
+<!-- City版安装代码已完成 -->
     
+    
+    <!-- gitalk评论 -->
+
+    <!-- utteranc评论 -->
+
+    <!-- partial('_partial/comment/changyan') -->
+    <!--PC版-->
+
+
+    
+    
+
+    <!-- 评论 -->
 </main>
             <!-- profile -->
             
@@ -595,6 +596,24 @@ acl合理控制
 </footer>
     </div>
     <!-- toc -->
+    
+    <div class="toc-wrapper" style=
+    
+
+
+
+
+
+
+
+top:50vh;
+
+    >
+        <div class="toc-catalog">
+            <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
+        </div>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#redhat基本操作"><span class="toc-number">1.</span> <span class="toc-text">redhat基本操作</span></a></li></ol>
+    </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>
     <div class="sidebar sidebar-hide">
@@ -774,6 +793,8 @@ jsonContent:
     
     </div>
     <!-- async load share.js -->
+    
+        <script src="/scripts/share.js" async></script>    
      
 	<!-- 爱心  -->
 	<script type="text/javascript" src="\scripts\love.js"></script>

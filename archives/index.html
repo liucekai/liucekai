@@ -357,6 +357,43 @@
     
     
     <article class="index-post">
+        <a class="abstract-title" href = "/2020/06/03/redhat%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/" >
+            
+                <span>redhat基本操作</span>
+        </a>
+        <div class="abstract-content">
+            redhat基本操作Init 3 进入非图形化界面
+Startx 进入图形化界面
+Init 5 进入图形化界面
+Vim /etc/inittab编辑开机默认界面：
+Id:5:initdefault 改成 Id:3:initdefault
+:Wq!保存，Reboot重启，随后开机就是非图形化界面了
+
+ root表示管理员（最高级用户），moni是主机名,desktop是当前所在位置，#代表最高权限，如果是普通用户则为$
+Pwd显示当前目录
+最前面的/表示根目录
+Cd 进入某目录（必须是完整的路径，即绝对路径）
+
+除非在对应的路径下配合.一起用，相对路径（而且./可以省略）
+
+Cd ..返回...
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2020/06/03</span>
+            </div>
+            <!-- tags  -->
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
         <a class="abstract-title" href = "/2020/06/02/1000%E4%BA%BA%E5%86%97%E4%BD%99%E5%9E%8B%E4%BC%81%E4%B8%9A%E7%BD%91/" >
             
                 <span>1000人冗余型企业网</span>
@@ -601,9 +638,16 @@ acl合理控制
     
     
     
+    
+    
+    
+    
+    
+    
+    
     <div class="total-and-search">
         <div class="total-archive">
-        Total : 4
+        Total : 5
         </div>
         <!-- search  -->
         
@@ -635,6 +679,20 @@ acl合理控制
     
         <li class="archive-post-item">
             <span class="archive-post-date">06/02</span><a class="archive-post-title" href= "/2020/06/02/hello-world/" >园区网</a>
+        </li>
+    
+    
+    
+    
+    
+        </ul>
+    
+    <div class="archive-year"> Invalid date </div>
+    <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">Invalid date</span><a class="archive-post-title" href= "/2020/06/03/redhat%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/" >redhat基本操作</a>
         </li>
     
     </div>
