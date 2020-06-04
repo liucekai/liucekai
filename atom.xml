@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-06-03T12:47:43.986Z</updated>
+  <updated>2020-06-04T05:29:01.561Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,21 +17,38 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>server 2008操作系统</title>
+    <link href="http://yoursite.com/2020/06/04/server%202008/"/>
+    <id>http://yoursite.com/2020/06/04/server%202008/</id>
+    <published>2020-06-04T02:00:00.000Z</published>
+    <updated>2020-06-04T05:29:01.561Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Web服务器配置"><a href="#Web服务器配置" class="headerlink" title="Web服务器配置"></a>Web服务器配置</h2><p><strong>配置之前需要先安装（在服务器管理器上添加角色）</strong><a id="more"></a></p><ul><li><h4 id="基本配置：网站名称、物理路径（主目录）"><a href="#基本配置：网站名称、物理路径（主目录）" class="headerlink" title="基本配置：网站名称、物理路径（主目录）"></a>基本配置：网站名称、物理路径（主目录）</h4><p><img src="https://liucekai.github.io/images/08-1.png" alt=""></p><p>路径为网页文档的路径，这里以默认网站举例，添加新网站操作一致</p><p><img src="https://liucekai.github.io/images/08-2.png" alt=""></p><p>绑定设置域名（即主机名），也可以绑定ip地址</p></li><li><h4 id="文档配置：默认文档、也可以添加，删除（主页）"><a href="#文档配置：默认文档、也可以添加，删除（主页）" class="headerlink" title="文档配置：默认文档、也可以添加，删除（主页）"></a>文档配置：默认文档、也可以添加，删除（主页）</h4><p><img src="https://liucekai.github.io/images/08-3.png" alt=""></p><p>想用别的默认文档当网站主页可以自己添加</p></li><li><h4 id="身份验证配置：属于安全配置，一般设匿名身份验证"><a href="#身份验证配置：属于安全配置，一般设匿名身份验证" class="headerlink" title="身份验证配置：属于安全配置，一般设匿名身份验证"></a>身份验证配置：属于安全配置，一般设匿名身份验证</h4><p><img src="https://liucekai.github.io/images/08-4.png" alt=""></p></li><li><h4 id="IP限制配置：属于安全配置，允许或拒绝一个IP或者一个IP范围"><a href="#IP限制配置：属于安全配置，允许或拒绝一个IP或者一个IP范围" class="headerlink" title="IP限制配置：属于安全配置，允许或拒绝一个IP或者一个IP范围"></a>IP限制配置：属于安全配置，允许或拒绝一个IP或者一个IP范围</h4><p><img src="https://liucekai.github.io/images/08-5.png" alt=""></p></li></ul><p>可以添加或删除IP规则</p><p><img src="https://liucekai.github.io/images/08-6.png" alt=""></p><p>输入环回地址或者本机IP访问也是一样</p><p><img src="https://liucekai.github.io/images/08-7.png" alt=""></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Web服务器配置&quot;&gt;&lt;a href=&quot;#Web服务器配置&quot; class=&quot;headerlink&quot; title=&quot;Web服务器配置&quot;&gt;&lt;/a&gt;Web服务器配置&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;配置之前需要先安装（在服务器管理器上添加角色）&lt;/strong&gt;
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>redhat基本操作</title>
     <link href="http://yoursite.com/2020/06/03/redhat%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/"/>
     <id>http://yoursite.com/2020/06/03/redhat%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/</id>
     <published>2020-06-03T11:37:36.000Z</published>
-    <updated>2020-06-03T12:47:43.986Z</updated>
+    <updated>2020-06-04T05:23:12.561Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="redhat基本操作"><a href="#redhat基本操作" class="headerlink" title="redhat基本操作"></a>redhat基本操作</h2><p>Init 3 进入非图形化界面</p><p>Startx 进入图形化界面</p><p>Init 5 进入图形化界面</p><p>Vim /etc/inittab编辑开机默认界面：</p><p>Id:5:initdefault 改成 Id:3:initdefault</p><p>:Wq!保存，Reboot重启，随后开机就是非图形化界面了</p><p><img src="https://liucekai.github.io/images/r1-1.png" alt=""></p><p> root表示管理员（最高级用户），moni是主机名,desktop是当前所在位置，#代表最高权限，如果是普通用户则为$</p><p>Pwd显示当前目录</p><p>最前面的/表示根目录</p><p>Cd 进入某目录（必须是完整的路径，即绝对路径）</p><p><img src="https://liucekai.github.io/images/r1-2.png" alt=""></p><p>除非在对应的路径下配合.一起用，相对路径（而且./可以省略）</p><p><img src="https://liucekai.github.io/images/r1-3.png" alt=""></p><p>Cd ..返回上一级目录，..表示上一级，.表示当前</p><p>Cd -表示回到上一次待的位置</p><p><img src="https://liucekai.github.io/images/r1-4.png" alt=""></p><p>Cp复制，mv移动/剪切（Mv还有重命名的功能）</p><p><img src="https://liucekai.github.io/images/r1-5.png" alt=""></p><p><img src="https://liucekai.github.io/images/r1-6.png" alt=""></p><p>Rm删除文件  rm -fr强制删除文件和文件夹</p><p><img src="https://liucekai.github.io/images/r1-7.png" alt=""></p><p>*表示所有</p><p><img src="https://liucekai.github.io/images/r1-8.png" alt=""></p><p>Shutdown -h 20二十分钟后关机</p><p>Shutdown -c取消关机</p><p><img src="https://liucekai.github.io/images/r1-9.png" alt=""></p><p>~表示root目录，即家目录</p><p>Ls 显示当前目录的内容</p><p>Init 5：切换为图形化界面</p><p><img src="https://liucekai.github.io/images/r1-10.png" alt=""></p><p>不记得要进入的文件夹时按下tab键会显示当下有哪些文件夹</p><p>Mkdir在当前位置新建文件夹</p><p><img src="https://liucekai.github.io/images/r1-11.png" alt=""></p><p>Touch 1  创建文件1</p>]]></content>
+    <content type="html"><![CDATA[<h2 id="redhat基本操作"><a href="#redhat基本操作" class="headerlink" title="redhat基本操作"></a>redhat基本操作</h2><p>Init 3 进入非图形化界面</p><p>Startx 进入图形化界面</p><p>Init 5 进入图形化界面<a id="more"></a></p><p>Vim /etc/inittab编辑开机默认界面：</p><p>Id:5:initdefault 改成 Id:3:initdefault</p><p>:Wq!保存，Reboot重启，随后开机就是非图形化界面了</p><p><img src="https://liucekai.github.io/images/r1-1.png" alt=""></p><p> root表示管理员（最高级用户），moni是主机名,desktop是当前所在位置，#代表最高权限，如果是普通用户则为$</p><p>Pwd显示当前目录</p><p>最前面的/表示根目录</p><p>Cd 进入某目录（必须是完整的路径，即绝对路径）</p><p><img src="https://liucekai.github.io/images/r1-2.png" alt=""></p><p>除非在对应的路径下配合.一起用，相对路径（而且./可以省略）</p><p><img src="https://liucekai.github.io/images/r1-3.png" alt=""></p><p>Cd ..返回上一级目录，..表示上一级，.表示当前</p><p>Cd -表示回到上一次待的位置</p><p><img src="https://liucekai.github.io/images/r1-4.png" alt=""></p><p>Cp复制，mv移动/剪切（Mv还有重命名的功能）</p><p><img src="https://liucekai.github.io/images/r1-5.png" alt=""></p><p><img src="https://liucekai.github.io/images/r1-6.png" alt=""></p><p>Rm删除文件  rm -fr强制删除文件和文件夹</p><p><img src="https://liucekai.github.io/images/r1-7.png" alt=""></p><p>*表示所有</p><p><img src="https://liucekai.github.io/images/r1-8.png" alt=""></p><p>Shutdown -h 20二十分钟后关机</p><p>Shutdown -c取消关机</p><p><img src="https://liucekai.github.io/images/r1-9.png" alt=""></p><p>~表示root目录，即家目录</p><p>Ls 显示当前目录的内容</p><p>Init 5：切换为图形化界面</p><p><img src="https://liucekai.github.io/images/r1-10.png" alt=""></p><p>不记得要进入的文件夹时按下tab键会显示当下有哪些文件夹</p><p>Mkdir在当前位置新建文件夹</p><p><img src="https://liucekai.github.io/images/r1-11.png" alt=""></p><p>Touch 1  创建文件1</p>]]></content>
     
     <summary type="html">
     
-      
-      
-        &lt;h2 id=&quot;redhat基本操作&quot;&gt;&lt;a href=&quot;#redhat基本操作&quot; class=&quot;headerlink&quot; title=&quot;redhat基本操作&quot;&gt;&lt;/a&gt;redhat基本操作&lt;/h2&gt;&lt;p&gt;Init 3 进入非图形化界面&lt;/p&gt;
-&lt;p&gt;Startx 进入图形化界面&lt;
-      
+      &lt;h2 id=&quot;redhat基本操作&quot;&gt;&lt;a href=&quot;#redhat基本操作&quot; class=&quot;headerlink&quot; title=&quot;redhat基本操作&quot;&gt;&lt;/a&gt;redhat基本操作&lt;/h2&gt;&lt;p&gt;Init 3 进入非图形化界面&lt;/p&gt;
+&lt;p&gt;Startx 进入图形化界面&lt;/p&gt;
+&lt;p&gt;Init 5 进入图形化界面
     
     </summary>
     
