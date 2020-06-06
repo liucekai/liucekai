@@ -371,6 +371,29 @@ height:50vh;
     
     
     <article class="index-post">
+        <a class="abstract-title" href = "/2020/06/06/hostmonitor%E7%9A%84%E4%BD%BF%E7%94%A8/" >
+            
+                <span>hostmonitor的使用（ensp环境下）</span>
+        </a>
+        <div class="abstract-content">
+            <p>要想实现模拟环境与监控软件互相通信，我们得让我们计算机中的lookback环回网卡作为中介，因为监控软件与我们的网卡能通信，而我们需要让lookback与模拟环境通信…
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2020/06/06</span>
+            </div>
+            <!-- tags  -->
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
         <a class="abstract-title" href = "/2020/06/05/DNS%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AE/" >
             
                 <span>sever2008-DNS服务器配置</span>
@@ -504,18 +527,10 @@ height:50vh;
                 <span>综合布线</span>
         </a>
         <div class="abstract-content">
-            智能大厦简介智能在于5A（automatic 自动）
-BA楼宇自动化：系统集成、楼宇自控系统
-OA办公自动化：集成管理系统、触摸查询
-FA消防自动化：消防报警系统、背景音乐系统
-SA安保自动化：一卡通系统、防盗报警系统、电子巡更系统、电视监控系统
-CA通信自动化：UPS系统、视频会议系统、有线电视系统、计算机网络系统、语音通信系统、综合布线系统
-虽然综合布线系统只是CA下的一个子系统，但他保证了建筑其他子系统的有效结合
-
-综合布线系统—线双绞线的数据传输
-1236工作，4578不工作（由于线与线之间会发生干扰，所以两两互绕，4578虽然不工作，但起的是隔离的作用）
-
-
+            <h3 id="智能大厦简介"><a href="#智能大厦简介" class="headerlink" title="智能大厦简介"></a>智能大厦简介</h3><p>智能在于5A（automatic 自动）</p>
+<p>BA楼宇自动化：系统集成、楼宇自控系统</p>
+<p>OA办公自动化：集成管理系统、触摸查询</p>
+<p>FA消防自动化：消防报警系统、背景音乐系统…
         </div>
         <div class="abstract-post-meta">
             <!-- date  -->
@@ -747,8 +762,8 @@ CA通信自动化：UPS系统、视频会议系统、有线电视系统、计算
     
     <div class="busuanzi-container">
     
-    
-    <span id="busuanzi_container_site_uv">UV: <span id="busuanzi_value_site_uv"></span> :)</span>
+     
+    <span id="busuanzi_container_site_pv">PV: <span id="busuanzi_value_site_pv"></span> :)</span>
     
     </div>
     
@@ -831,9 +846,20 @@ CA通信自动化：UPS系统、视频会议系统、有线电视系统、计算
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <div class="total-and-search">
         <div class="total-archive">
-        Total : 7
+        Total : 8
         </div>
         <!-- search  -->
         
@@ -850,6 +876,11 @@ CA通信自动化：UPS系统、视频会议系统、有线电视系统、计算
     
     <div class="archive-year"> 2020 </div>
     <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">06/06</span><a class="archive-post-title" href= "/2020/06/06/hostmonitor%E7%9A%84%E4%BD%BF%E7%94%A8/" >hostmonitor的使用（ensp环境下）</a>
+        </li>
     
     
         <li class="archive-post-item">
@@ -987,6 +1018,24 @@ jsonContent:
     <!-- CNZZ  -->
     
     </div>
+	<span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+    <script>
+        var now = new Date(); 
+        function createtime() { 
+            var grt= new Date("02/06/2020 12:00:00");//此处修改你的建站时间或者网站上线时间 
+            now.setTime(now.getTime()+250); 
+            days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days); 
+            hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours); 
+            if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum); 
+            mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;} 
+            seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum); 
+            snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;} 
+            document.getElementById("timeDate").innerHTML = "本站已安全运行 "+dnum+" 天 "; 
+            document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒"; 
+        } 
+    setInterval("createtime()",250);
+    </script>
+
     <!-- async load share.js -->
      
 	<!-- 爱心  -->
