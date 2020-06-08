@@ -22,7 +22,7 @@
     <meta name="description" content="">
     <meta name="description" content="Web服务器配置配置之前需要先安装（在服务器管理器上添加角色）">
 <meta property="og:type" content="article">
-<meta property="og:title" content="server2008-Web服务器基本配置">
+<meta property="og:title" content="server2008-Web和ftp服务器基本配置">
 <meta property="og:url" content="https://liucekai.github.io/2020/06/04/server%202008/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="Web服务器配置配置之前需要先安装（在服务器管理器上添加角色）">
@@ -34,8 +34,22 @@
 <meta property="og:image" content="https://liucekai.github.io/images/08-5.png">
 <meta property="og:image" content="https://liucekai.github.io/images/08-6.png">
 <meta property="og:image" content="https://liucekai.github.io/images/08-7.png">
+<meta property="og:image" content="https://liucekai.github.io/images/ftp-1.png">
+<meta property="og:image" content="https://liucekai.github.io/images/ftp-2.png">
+<meta property="og:image" content="https://liucekai.github.io/images/ftp-3.png">
+<meta property="og:image" content="https://liucekai.github.io/images/ftp-4.png">
+<meta property="og:image" content="https://liucekai.github.io/images/ftp-5.png">
+<meta property="og:image" content="https://liucekai.github.io/images/ftp-6.png">
+<meta property="og:image" content="https://liucekai.github.io/images/ftp-7.png">
+<meta property="og:image" content="https://liucekai.github.io/images/ftp-8.png">
+<meta property="og:image" content="https://liucekai.github.io/images/ftp-9.png">
+<meta property="og:image" content="https://liucekai.github.io/images/ftp-10.png">
+<meta property="og:image" content="https://liucekai.github.io/images/ftp-11.png">
+<meta property="og:image" content="https://liucekai.github.io/images/ftp-12.png">
+<meta property="og:image" content="https://liucekai.github.io/images/ftp-13.png">
+<meta property="og:image" content="https://liucekai.github.io/images/ftp-14.png">
 <meta property="article:published_time" content="2020-06-04T02:00:00.000Z">
-<meta property="article:modified_time" content="2020-06-05T02:53:45.673Z">
+<meta property="article:modified_time" content="2020-06-04T02:00:00.000Z">
 <meta property="article:author" content="CeKai">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://liucekai.github.io/images/08-1.png">
@@ -44,7 +58,7 @@
     
     <link rel="alternate" href="/atom.xml" title="The road to network engineering." type="application/atom+xml">
     
-    <title>server2008-Web服务器基本配置 · cekai-network manager</title>
+    <title>server2008-Web和ftp服务器基本配置 · cekai-network manager</title>
     <style type="text/css">
     @font-face {
         font-family: 'Oswald-Regular';
@@ -240,7 +254,7 @@
                 <a href="/" >The road to network engineering.</a>
             </div>
             <div class="post-title">
-                <a href="#" class="post-name">server2008-Web服务器基本配置</a>
+                <a href="#" class="post-name">server2008-Web和ftp服务器基本配置</a>
             </div>
     </div>
     
@@ -270,7 +284,7 @@ height:50vh;
         <h1 class="intro-title">
             <!-- 主页  -->
             
-            server2008-Web服务器基本配置
+            server2008-Web和ftp服务器基本配置
             <!-- 404 -->
             
         </h1>
@@ -289,7 +303,7 @@ height:50vh;
                 
                 
                     <div class="post-intro-read">
-                        <span>Word count: <span class="post-count word-count">197</span>Reading time: <span class="post-count reading-time">1 min</span></span>
+                        <span>Word count: <span class="post-count word-count">938</span>Reading time: <span class="post-count reading-time">3 min</span></span>
                     </div>
                 
                 <div class="post-intro-meta">
@@ -437,6 +451,56 @@ height:50vh;
 <p><img src="https://liucekai.github.io/images/08-6.png" alt=""></p>
 <p>输入环回地址或者本机IP访问也是一样</p>
 <p><img src="https://liucekai.github.io/images/08-7.png" alt=""></p>
+<hr>
+<h2 id="FTP服务器配置"><a href="#FTP服务器配置" class="headerlink" title="FTP服务器配置"></a>FTP服务器配置</h2><h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>如果在添加web角色时勾选了ftp服务，则不需要重复添加，如果没有勾选，则在“角色”里找到“角色服务”点击“添加角色服务”</p>
+<p><img src="https://liucekai.github.io/images/ftp-1.png" alt=""></p>
+<p>我是已经添加过了，所以可以看到</p>
+<p>接着打开IIS管理器，可以看到我们之前创建的web网站，然后新建ftp站点</p>
+<p><img src="https://liucekai.github.io/images/ftp-2.png" alt=""></p>
+<p><img src="https://liucekai.github.io/images/ftp-3.png" alt=""></p>
+<p>物理路径作为你ftp站点的根目录</p>
+<p><img src="https://liucekai.github.io/images/ftp-4.png" alt=""></p>
+<p>ftp站点不需要SSL</p>
+<p><img src="https://liucekai.github.io/images/ftp-5.png" alt=""></p>
+<p>如果是公共下载站，允许匿名登录，这里先勾上（之后可以再次配置）</p>
+<p>创建好了之后，为了方便测试，给我们之前指定的物理路径c:ftproot下新建一个“新建文本文档”，里面内容是“ftproot”</p>
+<p>切换到克隆机上，浏览器内输入<a href="ftp://192.168.16.128（16.128是刚刚服务器主机的ip地址）">ftp://192.168.16.128（16.128是刚刚服务器主机的ip地址）</a></p>
+<p>发现可以访问（忘截图）</p>
+<p>第二种测试方法，使用专门的ftp工具</p>
+<p>第三种测试方法，cmd命令行输入 ftp 192.168.16.128即可连接上</p>
+<h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><p><img src="https://liucekai.github.io/images/ftp-6.png" alt=""></p>
+<ul>
+<li><h5 id="ip地址和域限制"><a href="#ip地址和域限制" class="headerlink" title="ip地址和域限制"></a>ip地址和域限制</h5></li>
+</ul>
+<p>效果和web的一样，指定ip或ip域允许访问或不能访问，当某Ip被拒绝时，访问ftp会被要求输入用户名和密码（因为我们安装站点时支持匿名访问和身份验证访问），但无论输入什么都不能访问，因为被限制了</p>
+<ul>
+<li><h5 id="SSL设置"><a href="#SSL设置" class="headerlink" title="SSL设置"></a>SSL设置</h5></li>
+<li><h5 id="FTP当前会话"><a href="#FTP当前会话" class="headerlink" title="FTP当前会话"></a>FTP当前会话</h5></li>
+</ul>
+<p><img src="https://liucekai.github.io/images/ftp-7.png" alt=""></p>
+<p>可以显示当前连接的用户的信息</p>
+<ul>
+<li><h5 id="身份验证设置"><a href="#身份验证设置" class="headerlink" title="身份验证设置"></a>身份验证设置</h5></li>
+</ul>
+<p>如果该ftp站点不是作为一个下载站，而是一个公司内部的共享站，则取消匿名访问，只设置身份验证访问</p>
+<p>如果这样的话，那么由于我们是一个域环境中的服务器，那么关于ftp用户的创建，需要在我们的域当中去完成</p>
+<h6 id="ftp用户创建"><a href="#ftp用户创建" class="headerlink" title="ftp用户创建"></a>ftp用户创建</h6><p>用户创建之前，你得保证你的计算机已经添加好了”Active directory域服务“角色并且在该角色中创建和了一个域，详情参考<a href="https://blog.51cto.com/12476193/2123191" target="_blank" rel="noopener">https://blog.51cto.com/12476193/2123191</a></p>
+<p>域创建好之后，创建用户</p>
+<p><img src="https://liucekai.github.io/images/ftp-8.png" alt=""></p>
+<p><img src="https://liucekai.github.io/images/ftp-9.png" alt=""></p>
+<p>创建好之后，在ftproot下创建两个对应用户名的文件夹ftp1和ftp2，里面分别放ftp1文本和ftp2文本。</p>
+<p>克隆机访问</p>
+<p><img src="https://liucekai.github.io/images/ftp-10.png" alt=""></p>
+<p><img src="https://liucekai.github.io/images/ftp-11.png" alt=""></p>
+<p>登录用户ftp1发现，可以看到ftproot下所有文件，这样是不安全的，一个用户可以访问到其他用户的文件夹，所以我们要设置<strong>用户隔离</strong></p>
+<p>在设置用户隔离之前，先阅读”用户隔离帮助“</p>
+<p><img src="https://liucekai.github.io/images/ftp-12.png" alt=""></p>
+<p>所以我们需要删除原来创建的ftp1和ftp2文件夹，在ftproot下创建一个cekai文件夹（因为我创建域的域名就叫cekai，打开active directory用户和计算机可以看到），然后再分别创建ftp1和ftp2文件夹，里面放置文件</p>
+<p>之后再到IIS里设置用户隔离</p>
+<p><img src="https://liucekai.github.io/images/ftp-13.png" alt=""></p>
+<p>克隆机访问</p>
+<p><img src="https://liucekai.github.io/images/ftp-14.png" alt=""></p>
+<p>成功隔离</p>
 
     </article>
 
@@ -446,7 +510,7 @@ height:50vh;
             <p>Author：<a href="https://liucekai.github.io">CeKai</a>
             <p>原文链接：<a href="https://liucekai.github.io/2020/06/04/server%202008/">https://liucekai.github.io/2020/06/04/server%202008/</a>
             <p>发表日期：<a href="https://liucekai.github.io/2020/06/04/server%202008/">June 4th 2020, 10:00:00 am</a>
-            <p>更新日期：<a href="https://liucekai.github.io/2020/06/04/server%202008/">June 5th 2020, 10:53:45 am</a>
+            <p>更新日期：<a href="https://liucekai.github.io/2020/06/04/server%202008/">June 4th 2020, 10:00:00 am</a>
             <p>版权声明：本文采用<a rel="license noopener" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可</p>
         </div>
     
@@ -599,7 +663,7 @@ top:50vh;
         <div class="toc-catalog">
             <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
         </div>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Web服务器配置"><span class="toc-number">1.</span> <span class="toc-text">Web服务器配置</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#基本配置：网站名称、物理路径（主目录）"><span class="toc-number">1.0.1.</span> <span class="toc-text">基本配置：网站名称、物理路径（主目录）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#文档配置：默认文档、也可以添加，删除（主页）"><span class="toc-number">1.0.2.</span> <span class="toc-text">文档配置：默认文档、也可以添加，删除（主页）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#身份验证配置：属于安全配置，一般设匿名身份验证"><span class="toc-number">1.0.3.</span> <span class="toc-text">身份验证配置：属于安全配置，一般设匿名身份验证</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#IP限制配置：属于安全配置，允许或拒绝一个IP或者一个IP范围"><span class="toc-number">1.0.4.</span> <span class="toc-text">IP限制配置：属于安全配置，允许或拒绝一个IP或者一个IP范围</span></a></li></ol></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Web服务器配置"><span class="toc-number">1.</span> <span class="toc-text">Web服务器配置</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#基本配置：网站名称、物理路径（主目录）"><span class="toc-number">1.0.1.</span> <span class="toc-text">基本配置：网站名称、物理路径（主目录）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#文档配置：默认文档、也可以添加，删除（主页）"><span class="toc-number">1.0.2.</span> <span class="toc-text">文档配置：默认文档、也可以添加，删除（主页）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#身份验证配置：属于安全配置，一般设匿名身份验证"><span class="toc-number">1.0.3.</span> <span class="toc-text">身份验证配置：属于安全配置，一般设匿名身份验证</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#IP限制配置：属于安全配置，允许或拒绝一个IP或者一个IP范围"><span class="toc-number">1.0.4.</span> <span class="toc-text">IP限制配置：属于安全配置，允许或拒绝一个IP或者一个IP范围</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#FTP服务器配置"><span class="toc-number">2.</span> <span class="toc-text">FTP服务器配置</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#安装"><span class="toc-number">2.1.</span> <span class="toc-text">安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#配置"><span class="toc-number">2.2.</span> <span class="toc-text">配置</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#ip地址和域限制"><span class="toc-number">2.2.0.1.</span> <span class="toc-text">ip地址和域限制</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#SSL设置"><span class="toc-number">2.2.0.2.</span> <span class="toc-text">SSL设置</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#FTP当前会话"><span class="toc-number">2.2.0.3.</span> <span class="toc-text">FTP当前会话</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#身份验证设置"><span class="toc-number">2.2.0.4.</span> <span class="toc-text">身份验证设置</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#ftp用户创建"><span class="toc-number">2.2.0.4.1.</span> <span class="toc-text">ftp用户创建</span></a></li></ol></li></ol></li></ol></li></ol></li></ol>
     </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>
@@ -720,7 +784,7 @@ top:50vh;
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">06/04</span><a class="archive-post-title" href= "/2020/06/04/server%202008/" >server2008-Web服务器基本配置</a>
+            <span class="archive-post-date">06/04</span><a class="archive-post-title" href= "/2020/06/04/server%202008/" >server2008-Web和ftp服务器基本配置</a>
         </li>
     
     
@@ -853,7 +917,7 @@ jsonContent:
     <script>
         var now = new Date(); 
         function createtime() { 
-            var grt= new Date("02/06/2020 12:00:00");//此处修改你的建站时间或者网站上线时间 
+            var grt= new Date("06/02/2020 12:00:00");//此处修改你的建站时间或者网站上线时间 
             now.setTime(now.getTime()+250); 
             days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days); 
             hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours); 
