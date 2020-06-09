@@ -449,13 +449,24 @@ height:50vh;
 
     <!-- license  -->
     
+	<span class="post-time">{%if post.updated and post.updated > post.date%}
+  <span class="post-updated">
+    &nbsp; | &nbsp; {{ __('post.updated') }}
+    <time itemprop="dateUpdated" datetime="{{ moment(post.updated).format() }}" content="{{ date(post.updated, config.date_format) }}">
+      {{ date(post.updated, config.date_format) }}
+    </time>
+  </span>
+{% endif %}
+
+</span>
+	
+	
         <div class="license-wrapper">
             <p>Author：<a href="https://liucekai.github.io">CeKai</a>
             <p>原文链接：<a href="https://liucekai.github.io/2020/06/05/DNS%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AE/">https://liucekai.github.io/2020/06/05/DNS%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AE/</a>
             <p>发表日期：<a href="https://liucekai.github.io/2020/06/05/DNS%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AE/">June 5th 2020, 9:00:00 am</a>
             <p>更新日期：<a href="https://liucekai.github.io/2020/06/05/DNS%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AE/">June 5th 2020, 9:00:00 am</a>
             <p>版权声明：本文采用<a rel="license noopener" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可</p>
-
 
         </div>
     
