@@ -27,7 +27,7 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="需求分析 确保分支可以访问总部  企业内网划分多个vlan  出口配置NAT  禁止vlan5访问外网  所有设备，在任何位置都能telnet远程管理">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://liucekai.github.io/images/b10-2.png">
+<meta property="og:image" content="https://liucekai.github.io/images/tp1000.png">
 <meta property="og:image" content="https://liucekai.github.io/images/b2-3.png">
 <meta property="og:image" content="https://liucekai.github.io/images/b2-1.jpg">
 <meta property="og:image" content="https://liucekai.github.io/images/b2-2.png">
@@ -87,7 +87,7 @@
 <meta property="article:modified_time" content="2020-06-02T12:30:00.000Z">
 <meta property="article:author" content="CeKai">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://liucekai.github.io/images/b10-2.png">
+<meta name="twitter:image" content="https://liucekai.github.io/images/tp1000.png">
     <meta http-equiv="Cache-control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
     
@@ -501,7 +501,7 @@ height:50vh;
 </li>
 </ul>
 <hr>
-<h2 id="拓扑展示"><a href="#拓扑展示" class="headerlink" title="拓扑展示"></a>拓扑展示</h2><p><img src="https://liucekai.github.io/images/b10-2.png" alt=""></p>
+<h2 id="拓扑展示"><a href="#拓扑展示" class="headerlink" title="拓扑展示"></a>拓扑展示</h2><p><img src="https://liucekai.github.io/images/tp1000.png" alt=""></p>
 <hr>
 <h2 id="详细方案"><a href="#详细方案" class="headerlink" title="详细方案"></a>详细方案</h2><h3 id="步骤一：底层eth-trunk-、vlan（含修剪）、trunk"><a href="#步骤一：底层eth-trunk-、vlan（含修剪）、trunk" class="headerlink" title="步骤一：底层eth-trunk 、vlan（含修剪）、trunk"></a>步骤一：底层eth-trunk 、vlan（含修剪）、trunk</h3><p><strong>eth-trunk配置：</strong></p>
 <p><strong>SW1</strong></p>
@@ -734,7 +734,6 @@ height:50vh;
 <p><code>interface Vlanif3</code></p>
 <p><code>vrrp vrid 3 track interface GigabitEthernet0/0/1</code></p>
 <p><code>vrrp vrid 3 track bfd-session session-name bb</code></p>
-<p>`` </p>
 <p><code>interface Vlanif200</code></p>
 <p><code>vrrp vrid 200 track interface GigabitEthernet0/0/1</code></p>
 <p><code>vrrp vrid 200 track bfd-session session-name bb</code></p>
