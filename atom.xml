@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://liucekai.github.io/"/>
-  <updated>2020-06-06T03:37:36.000Z</updated>
+  <updated>2020-06-09T01:13:00.000Z</updated>
   <id>https://liucekai.github.io/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>CAD的应用</title>
+    <link href="https://liucekai.github.io/2020/06/09/CAD%E7%9A%84%E5%BA%94%E7%94%A8/"/>
+    <id>https://liucekai.github.io/2020/06/09/CAD%E7%9A%84%E5%BA%94%E7%94%A8/</id>
+    <published>2020-06-09T01:13:00.000Z</published>
+    <updated>2020-06-09T01:13:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="CAD技术应用简介"><a href="#CAD技术应用简介" class="headerlink" title="CAD技术应用简介"></a>CAD技术应用简介</h3><p>CAD技术主要运用于强电工程设计和弱电工程设计<a id="more"></a></p><h4 id="强电工程设计（380-220V）"><a href="#强电工程设计（380-220V）" class="headerlink" title="强电工程设计（380/220V）"></a>强电工程设计（380/220V）</h4><p>变配电系统、动力配电系统、照明配电系统、防雷接地系统、备用电源系统</p><h4 id="弱电工程设计-220V-50HZ以下"><a href="#弱电工程设计-220V-50HZ以下" class="headerlink" title="弱电工程设计(220V/50HZ以下)"></a>弱电工程设计(220V/50HZ以下)</h4><p>计算机网络工程原理图、拓扑图、系统图和施工设计图等</p><p>综合布线系统工程原理图、系统图和施工图等</p><p>语音系统工程原理图、系统图和施工图等</p><p>物联网系统工程原理图、系统图和施工图等</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;CAD技术应用简介&quot;&gt;&lt;a href=&quot;#CAD技术应用简介&quot; class=&quot;headerlink&quot; title=&quot;CAD技术应用简介&quot;&gt;&lt;/a&gt;CAD技术应用简介&lt;/h3&gt;&lt;p&gt;CAD技术主要运用于强电工程设计和弱电工程设计
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>hostmonitor的使用（ensp环境下）</title>
@@ -146,7 +165,7 @@
     <published>2020-06-02T05:37:36.000Z</published>
     <updated>2020-06-02T05:37:36.000Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="智能大厦简介"><a href="#智能大厦简介" class="headerlink" title="智能大厦简介"></a>智能大厦简介</h3><p>智能在于5A（automatic 自动）</p><p>BA楼宇自动化：系统集成、楼宇自控系统</p><p>OA办公自动化：集成管理系统、触摸查询</p><p>FA消防自动化：消防报警系统、背景音乐系统…<a id="more"></a></p><p>SA安保自动化：一卡通系统、防盗报警系统、电子巡更系统、电视监控系统</p><p><strong>CA通信自动化</strong>：UPS系统、视频会议系统、有线电视系统、计算机网络系统、语音通信系统、<strong>综合布线系统</strong></p><p><strong>虽然综合布线系统只是CA下的一个子系统，但他保证了建筑其他子系统的有效结合</strong></p><hr><h3 id="综合布线系统—线"><a href="#综合布线系统—线" class="headerlink" title="综合布线系统—线"></a>综合布线系统—线</h3><p><strong>双绞线的数据传输</strong></p><p>1236工作，4578不工作（由于线与线之间会发生干扰，所以两两互绕，4578虽然不工作，但起的是隔离的作用）</p><p><img src="https://liucekai.github.io/images/zh1.png" alt=""></p>]]></content>
+    <content type="html"><![CDATA[<h3 id="智能大厦简介"><a href="#智能大厦简介" class="headerlink" title="智能大厦简介"></a>智能大厦简介</h3><p>智能在于5A（automatic 自动）</p><p>BA楼宇自动化：系统集成、楼宇自控系统</p><p>OA办公自动化：集成管理系统、触摸查询</p><p>FA消防自动化：消防报警系统、背景音乐系统…<a id="more"></a></p><p>SA安保自动化：一卡通系统、防盗报警系统、电子巡更系统、电视监控系统</p><p><strong>CA通信自动化</strong>：UPS系统、视频会议系统、有线电视系统、计算机网络系统、语音通信系统、<strong>综合布线系统</strong></p><p><strong>虽然综合布线系统只是CA下的一个子系统，但他保证了建筑其他子系统的有效结合</strong></p><hr><h3 id="综合布线系统—子系统"><a href="#综合布线系统—子系统" class="headerlink" title="综合布线系统—子系统"></a>综合布线系统—子系统</h3><h4 id="工作区子系统（服务区子系统）"><a href="#工作区子系统（服务区子系统）" class="headerlink" title="工作区子系统（服务区子系统）"></a>工作区子系统（服务区子系统）</h4><p>由跳线与信息插座所连接的终端设备组成</p><p>信息插座：墙面型、地面型、桌面型等</p><p>终端设备：电话机、计算机、传真机、报警探头、摄像机、监视器、各种传感器件、各种音响设备</p><h4 id="水平子系统（配线子系统）"><a href="#水平子系统（配线子系统）" class="headerlink" title="水平子系统（配线子系统）"></a>水平子系统（配线子系统）</h4><p>工作区信息插座模块、模块到楼层管理间的连接缆线、配线架、跳线等组成，实现<strong>工作区与管理间之间的连接</strong></p><h4 id="管理间子系统"><a href="#管理间子系统" class="headerlink" title="管理间子系统"></a>管理间子系统</h4><h4 id="垂直子系统（干线子系统）"><a href="#垂直子系统（干线子系统）" class="headerlink" title="垂直子系统（干线子系统）"></a>垂直子系统（干线子系统）</h4><p>用于连接管理间子系统与设备间子系统，</p><p>注意事项：</p><p>垂直子系统使用光缆</p><p>垂直子系统应为星型拓扑结构垂直子系统干线光缆的拐弯处不要用直角拐弯</p><p>干线电缆和光缆布线的交接不应超过两次</p><p>从楼层配线到建筑群配线架之间只应有一个配线架</p><h4 id="设备间子系统"><a href="#设备间子系统" class="headerlink" title="设备间子系统"></a>设备间子系统</h4><h4 id="进线间子系统"><a href="#进线间子系统" class="headerlink" title="进线间子系统"></a>进线间子系统</h4><h4 id="建筑群子系统"><a href="#建筑群子系统" class="headerlink" title="建筑群子系统"></a>建筑群子系统</h4><hr><h3 id="综合布线系统—线缆"><a href="#综合布线系统—线缆" class="headerlink" title="综合布线系统—线缆"></a>综合布线系统—线缆</h3><h4 id="双绞线的数据传输"><a href="#双绞线的数据传输" class="headerlink" title="双绞线的数据传输"></a><strong>双绞线的数据传输</strong></h4><p>1236工作，4578不工作（由于线与线之间会发生干扰，所以两两互绕，4578虽然不工作，但起的是隔离的作用）</p><p><img src="https://liucekai.github.io/images/zh1.png" alt=""></p><h4 id="T568A和T568B线序"><a href="#T568A和T568B线序" class="headerlink" title="T568A和T568B线序"></a>T568A和T568B线序</h4><p>图</p><h4 id="直通线缆、交叉线缆应用场景（以前）"><a href="#直通线缆、交叉线缆应用场景（以前）" class="headerlink" title="直通线缆、交叉线缆应用场景（以前）"></a>直通线缆、交叉线缆应用场景（以前）</h4><p>​        直通线缆                              交叉线缆</p><p>交换机&lt;—&gt;路由器              交换机&lt;—&gt;交换机</p><p>交换机&lt;—&gt;PC                     交换机&lt;—&gt;集线器</p><p>交换机&lt;—&gt;服务器              集线器&lt;—&gt;路由器</p><p>集线器&lt;—&gt;PC                     路由器&lt;—&gt;路由器</p><p>集线器&lt;—&gt;服务器              路由器&lt;—&gt;PC</p><p>​                                             PC&lt;—&gt;PC</p><p>图</p><p><u><strong>现在随着技术的发展，新一代的网络设备，比如三层交换机之间可以支持直通电缆，路由器之间也可以支持直通电缆了</strong></u><u><strong>，甚至路由器和pc也可以</strong></u></p>]]></content>
     
     <summary type="html">
     
