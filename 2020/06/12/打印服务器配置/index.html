@@ -20,21 +20,31 @@
     <meta name="keywords" content="hexo,hexo-theme,hexo-blog">
     
     <meta name="description" content="">
-    <meta property="og:type" content="article">
-<meta property="og:title" content="园区网">
-<meta property="og:url" content="https://liucekai.github.io/2020/06/02/hello-world/index.html">
+    <meta name="description" content="要求： 安装打印服务器 连接共享打印机 管理打印服务器">
+<meta property="og:type" content="article">
+<meta property="og:title" content="sever2008-打印服务器配置">
+<meta property="og:url" content="https://liucekai.github.io/2020/06/12/%E6%89%93%E5%8D%B0%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AE/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="要求： 安装打印服务器 连接共享打印机 管理打印服务器">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-06-02T05:37:36.000Z">
-<meta property="article:modified_time" content="2020-06-02T05:37:36.000Z">
+<meta property="og:image" content="https://liucekai.github.io/images/dy-1.png">
+<meta property="og:image" content="https://liucekai.github.io/images/dy-2.png">
+<meta property="og:image" content="https://liucekai.github.io/images/dy-3.png">
+<meta property="og:image" content="https://liucekai.github.io/images/dy-4.png">
+<meta property="og:image" content="https://liucekai.github.io/images/dy-5.png">
+<meta property="og:image" content="https://liucekai.github.io/images/dy-6.png">
+<meta property="og:image" content="https://liucekai.github.io/images/dy-7.png">
+<meta property="article:published_time" content="2020-06-12T01:18:36.000Z">
+<meta property="article:modified_time" content="2020-06-12T01:18:36.000Z">
 <meta property="article:author" content="CeKai">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://liucekai.github.io/images/dy-1.png">
     <meta http-equiv="Cache-control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
     
     <link rel="alternate" href="/atom.xml" title="The road to network engineering." type="application/atom+xml">
     
-    <title>园区网 · cekai-network manager</title>
+    <title>sever2008-打印服务器配置 · cekai-network manager</title>
     <style type="text/css">
     @font-face {
         font-family: 'Oswald-Regular';
@@ -230,7 +240,7 @@
                 <a href="/" >The road to network engineering.</a>
             </div>
             <div class="post-title">
-                <a href="#" class="post-name">园区网</a>
+                <a href="#" class="post-name">sever2008-打印服务器配置</a>
             </div>
     </div>
     
@@ -260,7 +270,7 @@ height:50vh;
         <h1 class="intro-title">
             <!-- 主页  -->
             
-            园区网
+            sever2008-打印服务器配置
             <!-- 404 -->
             
         </h1>
@@ -279,12 +289,12 @@ height:50vh;
                 
                 
                     <div class="post-intro-read">
-                        <span>Word count: <span class="post-count word-count">0</span>Reading time: <span class="post-count reading-time">1 min</span></span>
+                        <span>Word count: <span class="post-count word-count">139</span>Reading time: <span class="post-count reading-time">1 min</span></span>
                     </div>
                 
                 <div class="post-intro-meta">
                     <span class="post-intro-calander iconfont-archer">&#xe676;</span>
-                    <span class="post-intro-time">2020/06/02</span>
+                    <span class="post-intro-time">2020/06/12</span>
                     
                     <span id="busuanzi_container_page_pv" class="busuanzi-pv">
                         <span class="iconfont-archer">&#xe602;</span>
@@ -408,28 +418,39 @@ height:50vh;
         <div class="container container-unloaded">
             <main class="main post-page">
     <article class="article-entry">
-        
+        <h3 id="要求："><a href="#要求：" class="headerlink" title="要求："></a>要求：</h3><ul>
+<li>安装打印服务器</li>
+<li>连接共享打印机</li>
+<li>管理打印服务器<a id="more"></a></li>
+</ul>
+<h4 id="添加打印机服务角色"><a href="#添加打印机服务角色" class="headerlink" title="添加打印机服务角色"></a>添加打印机服务角色</h4><p>和其他服务器的添加一样</p>
+<p><img src="https://liucekai.github.io/images/dy-1.png" alt=""></p>
+<h4 id="安装打印机"><a href="#安装打印机" class="headerlink" title="安装打印机"></a>安装打印机</h4><p><img src="https://liucekai.github.io/images/dy-2.png" alt=""></p>
+<p><img src="https://liucekai.github.io/images/dy-3.png" alt=""></p>
+<p>找到你要安的打印机型号</p>
+<p><img src="https://liucekai.github.io/images/dy-4.png" alt=""></p>
+<p>一定选择共享，因为这是个作为同一个域里的共享打印机，公司内部用的</p>
+<p><img src="https://liucekai.github.io/images/dy-5.png" alt=""></p>
+<p><img src="https://liucekai.github.io/images/dy-6.png" alt=""></p>
+<h4 id="安装网络共享打印机（客户端上）"><a href="#安装网络共享打印机（客户端上）" class="headerlink" title="安装网络共享打印机（客户端上）"></a>安装网络共享打印机（客户端上）</h4><p>如果出现需要验证身份且失败的情况</p>
+<p><img src="https://liucekai.github.io/images/dy-7.png" alt=""></p>
+<p>尝试解决：<a href="https://www.cnblogs.com/gyzhouyong/p/5016923.html" target="_blank" rel="noopener">https://www.cnblogs.com/gyzhouyong/p/5016923.html</a></p>
+<p>结果还是不行，待解决</p>
+
     </article>
 
     <!-- license  -->
     
-	<span class="post-time">{%if post.updated and post.updated > post.date%}
-  <span class="post-updated">
-    &nbsp; | &nbsp; {{ __('post.updated') }}
-    <time itemprop="dateUpdated" datetime="{{ moment(post.updated).format() }}" content="{{ date(post.updated, config.date_format) }}">
-      {{ date(post.updated, config.date_format) }}
-    </time>
-  </span>
-{% endif %}
+	
 
 </span>
 	
 	
         <div class="license-wrapper">
             <p>Author：<a href="https://liucekai.github.io">CeKai</a>
-            <p>原文链接：<a href="https://liucekai.github.io/2020/06/02/hello-world/">https://liucekai.github.io/2020/06/02/hello-world/</a>
-            <p>发表日期：<a href="https://liucekai.github.io/2020/06/02/hello-world/">June 2nd 2020, 1:37:36 pm</a>
-            <p>更新日期：<a href="https://liucekai.github.io/2020/06/02/hello-world/">June 2nd 2020, 1:37:36 pm</a>
+            <p>原文链接：<a href="https://liucekai.github.io/2020/06/12/%E6%89%93%E5%8D%B0%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AE/">https://liucekai.github.io/2020/06/12/%E6%89%93%E5%8D%B0%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AE/</a>
+            <p>发表日期：<a href="https://liucekai.github.io/2020/06/12/%E6%89%93%E5%8D%B0%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AE/">June 12th 2020, 9:18:36 am</a>
+            <p>更新日期：<a href="https://liucekai.github.io/2020/06/12/%E6%89%93%E5%8D%B0%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AE/">June 12th 2020, 9:18:36 am</a>
             <p>版权声明：本文采用<a rel="license noopener" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可</p>
 
         </div>
@@ -438,17 +459,12 @@ height:50vh;
     <ul class="post-paginator">
         <li class="next">
             
-                <div class="nextSlogan">Next Post</div>
-                <a href= "/2020/06/02/1000%E4%BA%BA%E5%86%97%E4%BD%99%E5%9E%8B%E4%BC%81%E4%B8%9A%E7%BD%91/" title= "1000人冗余型企业网">
-                    <div class="nextTitle">1000人冗余型企业网</div>
-                </a>
-            
         </li>
         <li class="previous">
             
                 <div class="prevSlogan">Previous Post</div>
-                <a href= "/2020/06/02/test-my-site/" title= "我的第一个博客">
-                    <div class="prevTitle">我的第一个博客</div>
+                <a href= "/2020/06/09/CAD%E7%9A%84%E5%BA%94%E7%94%A8/" title= "CAD的应用">
+                    <div class="prevTitle">CAD的应用</div>
                 </a>
             
         </li>
@@ -583,7 +599,7 @@ top:50vh;
         <div class="toc-catalog">
             <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
         </div>
-        
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#要求："><span class="toc-number">1.</span> <span class="toc-text">要求：</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#添加打印机服务角色"><span class="toc-number">1.1.</span> <span class="toc-text">添加打印机服务角色</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#安装打印机"><span class="toc-number">1.2.</span> <span class="toc-text">安装打印机</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#安装网络共享打印机（客户端上）"><span class="toc-number">1.3.</span> <span class="toc-text">安装网络共享打印机（客户端上）</span></a></li></ol></li></ol>
     </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>
@@ -689,9 +705,18 @@ top:50vh;
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <div class="total-and-search">
         <div class="total-archive">
-        Total : 9
+        Total : 10
         </div>
         <!-- search  -->
         
@@ -708,6 +733,11 @@ top:50vh;
     
     <div class="archive-year"> 2020 </div>
     <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">06/12</span><a class="archive-post-title" href= "/2020/06/12/%E6%89%93%E5%8D%B0%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AE/" >sever2008-打印服务器配置</a>
+        </li>
     
     
         <li class="archive-post-item">
@@ -736,12 +766,12 @@ top:50vh;
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">06/02</span><a class="archive-post-title" href= "/2020/06/02/1000%E4%BA%BA%E5%86%97%E4%BD%99%E5%9E%8B%E4%BC%81%E4%B8%9A%E7%BD%91/" >1000人冗余型企业网</a>
+            <span class="archive-post-date">06/02</span><a class="archive-post-title" href= "/2020/06/02/1000%E4%BA%BA%E4%B8%89%E5%B1%82%E6%9E%B6%E6%9E%84%E5%86%97%E4%BD%99%E5%9E%8B%E4%BC%81%E4%B8%9A%E7%BD%91/" >1000人冗余型企业网</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">06/02</span><a class="archive-post-title" href= "/2020/06/02/hello-world/" >园区网</a>
+            <span class="archive-post-date">06/02</span><a class="archive-post-title" href= "/2020/06/02/200-500%E4%BA%BA%E4%BA%8C%E5%B1%82%E6%9E%B6%E6%9E%84%E4%BC%81%E4%B8%9A%E5%9B%AD%E5%8C%BA%E7%BD%91/" >200-500人企业园区网</a>
         </li>
     
     
