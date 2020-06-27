@@ -597,7 +597,7 @@ height:50vh;
 <p>经测试，可以获取地址</p>
 <hr>
 <h3 id="步骤四：BFD（检测引擎假死）"><a href="#步骤四：BFD（检测引擎假死）" class="headerlink" title="步骤四：BFD（检测引擎假死）"></a>步骤四：BFD（检测引擎假死）</h3><p>在sw1上开启dhcp，并分配地址池，有几个网段就分配几个地址池。</p>
-<p>[sw1]dhcp enable</p>
+<p><code>[sw1]dhcp enable</code></p>
 <p> <img src="https://liucekai.github.io/images/c4-1.png" alt=""></p>
 <p><code>ip pool xiaoshou_1</code></p>
 <p> <code>gateway-list 192.168.10.1</code></p>
@@ -649,11 +649,11 @@ height:50vh;
 <p>Outside：外网 外部</p>
 <p>\2. Nat之Easy ip：允许多个私网地址转换成一个公网地址，很常用、</p>
 <p>出口路由全局：先写acl匹配内网私网地址段（这里的acl不是做访问控制列表）</p>
-<p>Acl number 2000</p>
-<p> Rule 5 permit source 192.168.0.0 0.0.0.255</p>
+<p><code>Acl number 2000</code></p>
+<p> <code>Rule 5 permit source 192.168.0.0 0.0.0.255</code></p>
 <p>注意：acl做匹配范围时，没有默认隐含允许所有的规则</p>
-<p>Int g0/0/x（公网接口，即外网口）</p>
-<p> Nat outbound 2000(2000是acl 的表号)</p>
+<p><code>Int g0/0/x（公网接口，即外网口）</code></p>
+<p> <code>Nat outbound 2000(2000是acl 的表号)</code></p>
 <p>原理：内网私网出包时转换成外网口当前的ip地址</p>
 <p>如果同时两个人a,b都上网，两个数据包同时出去，转换完了之后都变成一样的公网地址了对吧，那运营商回包的时候，他怎么知道哪个包是a的，哪个包是b要的呢。因为在出口路由转换的时候，就已经在两个包上分别附带上了‘小尾巴’（一个在数据包里的记录），在回来时，一看小尾巴就知道哪个是哪个了。就不会弄乱</p>
 <p><strong>所以本项目中，在出口路由采用easy ip</strong></p>
@@ -671,9 +671,9 @@ height:50vh;
 <p> <img src="https://liucekai.github.io/images/c6-1.png" alt=""></p>
 <p>随便选个根目录，然后启动，就能模拟一个服务器的网站了</p>
 <p>在出口路由的外网口：</p>
-<p>Int g0/0/1</p>
-<p>nat server protocol tcp global 12.1.1.2 80 inside 192.</p>
-<p>168.200.10 80</p>
+<p><code>Int g0/0/1</code></p>
+<p><code>nat server protocol tcp global 12.1.1.2 80 inside 192.</code></p>
+<p><code>168.200.10 80</code></p>
 <p>因为是网站所以用80端口，80也可以用www代替</p>
 <p>完了之后要测试的话，得在外网加一台客户端才能测试</p>
 <p> <img src="https://liucekai.github.io/images/c6-2.png" alt=""></p>
@@ -734,19 +734,19 @@ height:50vh;
 <p>二层交换机（一般都是接入交换机）配置管理地址：</p>
 <p>首先说明，为了网络的稳定性和安全性，使得管理的可靠性，不让用户的上网业务流量出问题，我们将管理流量与用户的上网业务流量分离，比如vlan30是用户上网的网段，就不能把telnet划入进去，应该用一个专门的管理vlan来管理、承载telnet的管理流量，如vlan999。且将管理ip地址配置在一个网段即可，也就是说统一vlan999的网段，如统一为192.168.253.0/24</p>
 <p>在所有交换机上创建vlan999，并添加管理ip地址，使用svi的方法添加Ip地址。</p>
-<p>Sw1（配置管理ip地址，同时又是其他管理Ip地址的网关）</p>
+<p><strong>Sw1</strong>（配置管理ip地址，同时又是其他管理Ip地址的网关）</p>
 <p> <img src="https://liucekai.github.io/images/c8-7.png" alt=""></p>
-<p>Sw2（配置管理ip地址）</p>
+<p><strong>Sw2</strong>（配置管理ip地址）</p>
 <p> <img src="https://liucekai.github.io/images/c8-8.png" alt=""></p>
-<p>Sw3.4.5略</p>
+<p><strong>Sw3.4.5略</strong></p>
 <p>配好了，有了ip，有了网关，是否能telnet呢？先ping一下，如果ping都ping不通，更不可能telnet</p>
 <p> <img src="https://liucekai.github.io/images/c8-9.png" alt=""></p>
-<p>分析，20.2à253.4</p>
+<p><strong>分析，20.2—&gt;253.4</strong></p>
 <p>先到网关20.1（查看路由表可以看到有缺省路由到网关的，毋庸置疑），网关也可以到253.4（253.4属于vlan1即253.0，而我们之前的trunk允许通过所有vlan，路由表也可以看到，所以可达），可以在出口抓包看</p>
 <p> <img src="https://liucekai.github.io/images/c8-10.png" alt=""></p>
 <p>但是sw4没有回包路由，他只是个二层交换机，查看路由表可以发现只有到达253网段的直连，所以对于20.2这个目的地址他是不知道怎么转发的，所以要配置一条缺省路由让他先回到核心交换机上</p>
 <p> <img src="https://liucekai.github.io/images/c8-11.png" alt=""></p>
-<p>Ip route-static 0.0.0.0 0 192.168.253.1</p>
+<p><code>Ip route-static 0.0.0.0 0 192.168.253.1</code></p>
 <p>这样一来，即使路由表没有对应的路由，也可以走缺省回到核心（缺省路由：目的地址为任意），回到核心就行了，核心上有回到20网段的路由，所以就可以回包了</p>
 <p> <img src="https://liucekai.github.io/images/c8-12.png" alt=""></p>
 <p> <img src="https://liucekai.github.io/images/c8-13.png" alt=""></p>
@@ -1253,7 +1253,7 @@ jsonContent:
 	<script type="text/javascript" src="/scripts/love.js"></script>
 	<!-- 线条  -->
 
-<script type="text/javascript" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
+<script type="text/javascript" count="400" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
 
 <!-- 爆炸 -->
 <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas> 
